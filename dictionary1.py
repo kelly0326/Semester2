@@ -20,4 +20,13 @@ info.keys()
 # dict_keys(['personal_data', 'other'])
 
 info["personal_data"]["physical_features"]["color"]["hair"]
-# 'brown'
+
+
+# Initial state
+student = {'id': 87654321, 'name': 'Jose', 'homework': [10,9,9], 'exams': [91,86,92] }
+temp = [87654321,"jose",[10,9,9], [91,86,92]]
+
+temp[1]
+# 'jose'
+student["name"]
+# 'Jose'
