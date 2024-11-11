@@ -1,5 +1,5 @@
 # Dictionary
-# testing example
+# testing example 1
 
 info = {'personal_data':
          {'name': 'Hermione',
@@ -30,3 +30,46 @@ temp[1]
 # 'jose'
 student["name"]
 # 'Jose'
+
+# Testing example 2
+# Below is nosql table
+characters = {'bios':
+        [
+         {'name': 'Hermione',
+          'age': 16,
+          'major': 'Potions',
+          'physical_features':
+             {'color': {'eye': 'brown',
+                        'hair': 'brown'},
+              'height': "5'6"}
+         },
+         {'name': 'Harry',
+          'age': 16,
+          'major': 'Defense against the Dark Arts',
+          'physical_features':
+             {'color': {'eye': 'brown',
+                        'hair': 'brown'},
+              'height': "5'9"}
+          },  
+          {'name': 'Ron',
+          'age': 16,
+          'major': 'Care of Magical Creatures',
+          'physical_features':
+             {'color': {'eye': 'blue',
+                        'hair': 'red'},
+              'height': "6'1"}
+          }
+        ]  
+             }
+
+characters["bios"][2]["major"]
+# 'Care of Magical Creatures'
+
+for character in characters["bios"]:
+    # print(character)
+    if character['name'] == 'Ron':
+        print("Ron's major is:", character['major'])
+        print("Ron's height is:", character['physical_features']['height'])
+
+# Ron's major is: Care of Magical Creatures
+# Ron's height is: 6'1
