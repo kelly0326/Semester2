@@ -73,3 +73,39 @@ for character in characters["bios"]:
 
 # Ron's major is: Care of Magical Creatures
 # Ron's height is: 6'1
+
+# Complex dictionary
+info = {'personal_data':
+         {'name': 'Hermione',
+          'age': 16,
+          'major': 'Potions',
+          'physical_features':
+             {'color': {'eye': 'brown',
+                        'hair': 'brown'},
+              'height': "5'6"}
+         },
+       'other':
+         {'friends': ['Harry', 'Ron', 'Victor'],
+          'interests': ['horcruxes', 'homework', 'dentistry']
+         }
+      }
+
+info["personal_data"]
+# {'name': 'Hermione',
+#'age': 16,
+#'major': 'Potions',
+#'physical_features': {'color': {'eye': 'brown', 'hair': 'brown'},
+# 'height': "5'6"}}
+
+len(info["personal_data"])
+# 4
+info["personal_data"].keys()
+# dict_keys(['name', 'age', 'major', 'physical_features'])
+info["personal_data"]["physical_features"]
+# {'color': {'eye': 'brown', 'hair': 'brown'}, 'height': "5'6"}
+
+info["personal_data"]["physical_features"]["color"]
+# {'eye': 'brown', 'hair': 'brown'}
+
+info["personal_data"]["physical_features"]["color"]["hair"]
+# 'brown'
