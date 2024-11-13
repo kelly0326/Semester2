@@ -1,4 +1,4 @@
-# Dictionary
+# Dictionary & List
 
 info = {'personal_data':
          {'name': 'Hermione',
@@ -20,3 +20,15 @@ info.keys()
 
 info["personal_data"]["physical_features"]["color"]["hair"]
 # 'brown'
+
+
+# Initial State [list vs. dictionary] (P4)
+student = {'id': 87654321, 'name': 'Jose', 'homework': [10,9,9], 'exams': [91,86,92] }
+temp = [87654321,"jose",[10,9,9], [91,86,92]]
+
+# Retrive
+temp[1]
+# 'jose'
+
+student["name"]
+# 'Jose'
