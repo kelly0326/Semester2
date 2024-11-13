@@ -22,7 +22,9 @@ info["personal_data"]["physical_features"]["color"]["hair"]
 # 'brown'
 
 
-# Initial State [list vs. dictionary] (P4)
+# See Jupyter: 'Python4_Dictionary'
+
+# Initial State [list vs. dictionary]
 student = {'id': 87654321, 'name': 'Jose', 'homework': [10,9,9], 'exams': [91,86,92] }
 temp = [87654321,"jose",[10,9,9], [91,86,92]]
 
