@@ -34,3 +34,15 @@ temp[1]
 
 student["name"]
 # 'Jose'
+
+# Add 
+# dictionary is to update, it's not to append values
+temp.append(["cs50", "ds8"])
+temp
+# [87654321, 'jose', [10, 9, 9], [91, 86, 92], ['cs50', 'ds8']]
+
+student.append(["cs50", "ds8"])
+# AttributeError: 'dict' object has no attribute 'append'
+
+
+
