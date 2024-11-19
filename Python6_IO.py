@@ -31,3 +31,12 @@ while True:
     print(count, balance)
     if balance >= deposit * 2:
         break
+
+
+while True:
+    value = input("must input a positive integer:")
+    if value.isdigit():
+        value = int(value)
+        break
+    else:
+        print("your value", value, "is not a positive integer")
