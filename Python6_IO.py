@@ -40,3 +40,14 @@ while True:
         break
     else:
         print("your value", value, "is not a positive integer")
+
+
+while True:
+    value = input("must input a positive integer")
+    if value.count(".") != 0:
+        print(value, "is a float not an integer")
+    elif value.isdigit():
+        value = int(value)
+        break
+    else:
+        print("your value:", value, "is not a positive number")
