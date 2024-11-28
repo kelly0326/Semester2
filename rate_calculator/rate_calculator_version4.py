@@ -89,4 +89,5 @@ def main():
             print("thank you for using.")
             break
 
-main() # 1st function call
+main() 
+# 1st function call (everything starts from here; it first calls back to line 70)
