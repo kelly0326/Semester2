@@ -73,7 +73,7 @@ def main():
     customer_withdraw = 0
 
     while True:
-       # menu()
+        menu()
         command = input("please select the menu:")
         if command == "a":
             customer_deposit = deposit()
