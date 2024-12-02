@@ -1,9 +1,11 @@
 def plus(a, b):
 	print("in function", a + b)
 	return (a + b)
-print(plus(3, 5))
+print(plus(3, 5)) # 8 (why not 'in function', 8?)
 plus(10, 20)
 print("program runs successfully.")
+
+
 
 
 def test(a, b, c):
