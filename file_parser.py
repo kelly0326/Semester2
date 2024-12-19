@@ -9,12 +9,6 @@ License: MIT
 
 # below all belong to 'function level doc string'
 def convert_type(lst):
-    count = []
-    for number in range(len(lst)):
-        if number != 0:
-            count.append(float(lst[number]))
-    print(count)
-    return count
     '''
     # Doc string
     Description: 
@@ -27,14 +21,16 @@ def convert_type(lst):
     # law regulated
     # (Precondition is most important. You cannot miss it at work!)
     '''
+    count = []
+    for number in range(len(lst)):
+        if number != 0:
+            count.append(float(lst[number]))
+    print(count)
+    return count
+
 
 
 def get_column(data, column_number):
-    lst = []
-    for row in data:
-        lst.append(row[column_number])
-    print("in get_column", lst)
-    return lst
     """
     Description:
         This function takes two parameters data and column_number
@@ -44,8 +40,25 @@ def get_column(data, column_number):
     Precondition: data must be a 2D list, column_number must be an integar
                   smaller than the length of the first row
     """
+    lst = []
+    for row in data:
+        lst.append(row[column_number])
+    print("in get_column", lst)
+    return lst
+
 
 def read_data(path):
+    """
+        Description:
+        This function takes file name as path, `open`the file
+        `read`the file and save it in the variable `data`
+        Use `split('\\n')` and `split(",")` convert data to a nested list
+        Then return the list
+    Parameter: path(str)
+    Return: (2d list)
+    Precondition: 
+        File must in the same folder with Python script, file name must correct
+    """
     file = open(path)
     data = file.read()
     print(repr(data)) # return print (to see raw string)
@@ -63,17 +76,7 @@ def read_data(path):
         data2.append(temp)
     print(data2)
     return data2
-    """
-    Description:
-        This function takes file name as path, `open`the file
-        `read`the file and save it in the variable `data`
-        Use `split('\\n')` and `split(",")` convert data to a nested list
-        Then return the list
-    Parameter: path(str)
-    Return: (2d list)
-    Precondition: 
-        File must in the same folder with Python script, file name must correct
-    """
+
 
 def get_avg(lst):
     """
