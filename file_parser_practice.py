@@ -15,7 +15,7 @@ def read_data():
     Precondition: data must be a 2D list, column_number must be an integar
                   smaller than the length of the first row
     """
-	file = open("amd_stock_data.csv")
+	file = open("amd.csv")
 	data = file.read()
 	print("data type:", type(data)) # string (raw data)
 	print(repr(data))
@@ -70,6 +70,9 @@ def average(my_float_column):
 	average = sum(my_float_column) / len(my_float_column)
 	return average
 
+
+	
+
 #
 def write_file(data):
 	print(data)
@@ -91,7 +94,7 @@ def write_file(data):
 	#file.write("hello world.")
 	#file.write("hello again.")
 	for row in data:
-		file.write(",".join(row))
+		file.write(",".join(row)) # .join() must to be used by string (here, row must be string)
 		file.write("\n") # Enter
 
 
